@@ -1159,6 +1159,7 @@
 			
 			$('.board-form input[name="startDate"]').val(arg.startStr+" "+nowTime);
 			$('.board-form input[name="endDate"]').val(arg.endStr+" "+nowTime);
+			editor7.setData("");
 			$('.modal-footer button[type="submit"]').text("입력")
 			calendar.unselect();
 		};

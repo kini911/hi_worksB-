@@ -66,7 +66,8 @@ public class PrivateScheController {
 		for(int i=0;i<tdlList.size();i++) {
 			hash.put("id", "t"+tdlList.get(i).getListId());
 			hash.put("title", tdlList.get(i).getListTitle());
-			hash.put("start", tdlList.get(i).getApplyDate());
+			String applyDate = simpleDateFormat.format(tdlList.get(i).getApplyDate());
+			hash.put("start", applyDate);
 			hash.put("end", "");
 			hash.put("allDay", "true");
 			hash.put("color", "#2a9d8f");

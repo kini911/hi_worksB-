@@ -69,6 +69,9 @@
 	}
 	.modal-content{
 		height: 600px;
+		overflow: scroll;
+		overflow-x: hidden;
+		max-height: 550px;
 	}
 	
 </style>
@@ -644,6 +647,7 @@
 				alert("날짜를 입력해주세요")
 				$('#tdlFormInsert input[name="listTitle"]').focus();
 				return false;
+			}else{
 			}
 			$('#tdlFormInsert input[name="memberId"]').val(memberId);
 			let tdlFormInsert = $('#tdlFormInsert')
